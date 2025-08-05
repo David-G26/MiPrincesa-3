@@ -31,7 +31,7 @@ function crearFrase(x, y) {
 
   setTimeout(() => {
     frase.remove();
-  }, 3000);
+  }, 5000);
 }
 
 document.addEventListener('mousemove', e => crearFrase(e.clientX, e.clientY));
@@ -39,3 +39,4 @@ document.addEventListener('touchmove', e => {
   const touch = e.touches[0];
   crearFrase(touch.clientX, touch.clientY);
 });
+
